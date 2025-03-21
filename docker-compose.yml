@@ -1,6 +1,25 @@
-version: '3.8'
+#version: '3.8'
 
 services:
+  spark-iceberg:
+    image: bitnami/spark:3.3
+    container_name: spark-iceberg
+    environment:
+      - SPARK_MODE=master
+    ports:
+      - "4041:4040"
+      - "7078:7077"
+    volumes:
+      - ./spark-iceberg:/bitnami
+      - ./jars:/opt/spark/jars  
+      - ./spark-iceberg/conf/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
+    entrypoint: >
+      /bin/bash -c "
+      mkdir -p /opt/spark/jars &&
+      cp /opt/bitnami/spark/jars/* /opt/spark/jars &&
+      exec /opt/bitnami/scripts/spark/entrypoint.sh /opt/bitnami/scripts/spark/run.sh
+      "
+
 
   minio:
     image: quay.io/minio/minio
