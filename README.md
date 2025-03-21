@@ -1,6 +1,6 @@
 # 📦 Data Lake Project
 
-Welcome to the **Data Lake Project** — a full on-premise, Docker-based data lake architecture built using open-source tools including Trino, Iceberg, Hive Metastore, MinIO, and PostgreSQL.
+**Data Lake Project** — a full Docker-based data lake architecture built using open-source tools including Trino, Iceberg, Hive Metastore, MinIO, and PostgreSQL.
 
 ---
 
