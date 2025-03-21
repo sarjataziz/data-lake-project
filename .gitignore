@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Docker
+*.tar
+*.pid
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Ignore Airflow Logs & Configs
+airflow/logs/
+airflow/airflow.cfg
+airflow/airflow.db
+airflow/webserver_config.py
+
+# Ignore Trino Data & Configs
+trino/
+trino-data/
+trino-config/
+
+# Ignore Docker Volumes
+*/__pycache__/
+.env
+*.log
+*.pid
+*.db
