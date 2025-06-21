@@ -1,4 +1,4 @@
-# 📦 Data Lake Project
+# 📦 Data Lake Architecture Project
 
 **Data Lake Architecture Project** — a full Docker-based data lake architecture built using open-source tools including Trino, Iceberg, Hive Metastore, MinIO, and PostgreSQL.
 
